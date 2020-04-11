@@ -13,7 +13,7 @@ classmappings="$workdir/BuildData/mappings/"$(cat "${workdir}/BuildData/info.jso
 membermappings="$workdir/BuildData/mappings/"$(cat "${workdir}/BuildData/info.json" | grep memberMappings | cut -d '"' -f 4)
 packagemappings="$workdir/BuildData/mappings/"$(cat "${workdir}/BuildData/info.json" | grep packageMappings | cut -d '"' -f 4)
 decompiledir="$workdir/Minecraft/$minecraftversion"
-jarpath="$decompiledir/$minecraftversion"
+jarpath="/root/snapserver.jar"
 mkdir -p "$decompiledir"
 
 echo "Downloading unmapped vanilla jar..."
