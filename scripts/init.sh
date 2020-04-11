@@ -5,7 +5,7 @@ set -e
 PS1="$"
 basedir="$(cd "$1" && pwd -P)"
 workdir="$basedir/work"
-minecraftversion=$(cat "$workdir/BuildData/info.json"  | grep minecraftVersion | cut -d '"' -f 4)
+minecraftversion=20w15a
 spigotdecompiledir="$workdir/Minecraft/$minecraftversion/spigot"
 nms="$spigotdecompiledir/net/minecraft/server"
 cb="src/main/java/net/minecraft/server"
