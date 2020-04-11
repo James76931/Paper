@@ -6,7 +6,7 @@ basedir="$(cd "$1" && pwd -P)"
 workdir="$basedir/work"
 mcver=$(cat "$workdir/BuildData/info.json" | grep minecraftVersion | cut -d '"' -f 4)
 paperjar="$basedir/Paper-Server/target/paper-$mcver.jar"
-vanillajar="$workdir/Minecraft/$mcver/$mcver.jar"
+vanillajar="/root/snapserver.jar"
 
 (
     cd "$workdir/Paperclip"
