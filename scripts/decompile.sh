@@ -5,7 +5,7 @@ set -e
 PS1="$"
 basedir="$(cd "$1" && pwd -P)"
 workdir="$basedir/work"
-minecraftversion=$(cat "$workdir/BuildData/info.json"  | grep minecraftVersion | cut -d '"' -f 4)
+minecraftversion="20w15a"
 windows="$([[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]] && echo "true" || echo "false")"
 decompiledir="$workdir/Minecraft/$minecraftversion"
 spigotdecompiledir="$decompiledir/spigot"
